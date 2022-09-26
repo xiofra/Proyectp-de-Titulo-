@@ -1,0 +1,13 @@
+<div class="card mt-5">
+    <div class="card-body">
+        <h3 class="card-title text-center">Ingrese su correo electronico</h3>
+        <div class="form-group">
+            <input type="email" class="form-control" [formControl]="userEmailVali">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-lg" (click)="onSendEmail()">Enviar Correo de validacion</button>
+        </div>
+    </div>
+
+</div>
+

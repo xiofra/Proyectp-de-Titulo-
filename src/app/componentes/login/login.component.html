@@ -1,0 +1,43 @@
+<p>login works!</p>
+
+
+<div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error *ngIf="email?.errors?.['email']">
+                Ingrese un correo electronico valido 
+              </mat-error>
+        </mat-form-field>
+
+    
+        <mat-form-field>
+            <input matInput placeholder="Password" formControlName="password" type="password">
+            <mat-error *ngIf="password?.errors?.['password']">
+                Ingrese su contraseña nuevamente 
+              </mat-error>
+        </mat-form-field>
+
+        <div class="center margin-top">
+            <button mat-raised-button color="primary" type="submit">
+                Ingresa a la plataforma
+            </button>
+        </div>
+
+
+        <div class="center margin-top">
+            <button mat-raised-button color="primary" (click)="popUpSendEmail()">
+                Correo de verificacion
+            </button>
+
+            <button mat-raised-button color="primary" (click)="popUpForgotPassword()">
+                Olvide mi contraseña
+            </button>
+
+            <button mat-raised-button color="primary" (click)="signUP()">
+                Registrate aqui
+            </button>
+        </div>
+    </form>
+
+</div>

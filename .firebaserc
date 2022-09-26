@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "statim-13023": {
+      "hosting": {
+        "proyecto": [
+          "statim-13023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "statim-13023"
+  }
+}
